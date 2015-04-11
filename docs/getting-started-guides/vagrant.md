@@ -299,10 +299,10 @@ Log on to one of the minions (`vagrant ssh minion-1`) and inspect the salt minio
 
 #### I want to change the number of minions !
 
-You can control the number of minions that are instantiated via the environment variable `NUM_MINIONS` on your host machine.  If you plan to work with replicas, we strongly encourage you to work with enough minions to satisfy your largest intended replica size.  If you do not plan to work with replicas, you can save some system resources by running with a single minion. You do this, by setting `NUM_MINIONS` to 1 like so:
+You can control the number of minions that are instantiated via the environment variable `KUBERNETES_NUM_MINIONS` on your host machine.  If you plan to work with replicas, we strongly encourage you to work with enough minions to satisfy your largest intended replica size.  If you do not plan to work with replicas, you can save some system resources by running with a single minion. You do this, by setting `KUBERNETES_NUM_MINIONS` to 1 like so:
 
 ```
-export NUM_MINIONS=1
+export KUBERNETES_NUM_MINIONS=1
 ```
 
 #### I want my VMs to have more memory !
